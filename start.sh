@@ -7,5 +7,8 @@ npx medusa db:migrate
 echo "Seeding database..."
 npm run seed || echo "Seeding failed, continuing..."
 
+# Disable telemetry
+npx medusa telemetry --disable
+
 echo "Starting Medusa development server..."
 npm run dev
